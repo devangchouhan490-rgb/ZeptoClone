@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/product_image"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product Name"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/product_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹50"
+            android:textSize="20sp"
+            android:textColor="#008000"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:id="@+id/product_mrp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹80"
+            android:textSize="18sp"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:id="@+id/product_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 Kg"
+            android:textSize="18sp"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:id="@+id/product_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fresh quality product."
+            android:textSize="16sp"
+            android:layout_marginTop="10dp" />
+
+
+
+        <!-- ADD TO CART BUTTON -->
+
+        <Button
+            android:id="@+id/btn_add_to_cart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add To Cart"
+            android:layout_marginTop="20dp" />
+
+
+
+        <!-- QUANTITY LAYOUT -->
+
+        <LinearLayout
+            android:id="@+id/cart_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/btn_decrease"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="-" />
+
+            <TextView
+                android:id="@+id/item_count"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textSize="18sp"
+                android:gravity="center" />
+
+            <Button
+                android:id="@+id/btn_increase"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="+" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
